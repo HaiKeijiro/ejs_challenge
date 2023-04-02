@@ -1,0 +1,18 @@
+*Example
+<li id="home"><a href="/">HOME</a></li>
+
+we automatically make a get request depending on the location of the file
+
+*professional way to use loop, use forEach()
+posted.forEach(function(post) {
+    console.log(post.title);
+});
+    desc in notion ejs
+
+*remember that nodemon only restart the server when we make any changes to app.js
+
+*Di kasus route parameters, penjelasannya gini
+-> Jadi kita butuh akses ke object post tapi kita gabisa karena post itu ada di dalem local, jadinya kita cuma bisa akses satu-satunya variable global (posts) terus object posts itu kita check arraynya, tapi karena bentuknya array, kita harus uraiin pake forEach, baru bisa kita dapet datanya.
+
+*Truncate String
+post.desc.substring(0, 100) + "..."
